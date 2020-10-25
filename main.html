@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript.com</title>
+        <style>
+            *{margin:0;padding: 0;}
+            #header{
+                position: relative;
+                height: 120px;
+                width: 100%;
+            }
+            .bodyer1{
+                margin-top: 100px;
+                height: 400px;
+            }
+            .bodyer2{
+                margin-top: 50px;
+                width: 100%;
+                height: 420px;
+            }
+            .footer{
+                width: 100%;
+                height: 100px;
+                background-color: black;
+                
+            }
+            #logo1{
+                width:275px;
+                height:65px;  
+                margin-top: 20px;
+                margin-left: 30px;
+                float: left;
+            }
+            #button1{
+                width: 210px;
+                height:45px;
+                background-color:#ec008c;
+                border-radius: 2px;
+                border-style: none;
+                position: relative;
+                color:white;
+                font-weight: 700;
+                font-size: 14;
+                letter-spacing: 2px;
+                line-height: 1.1;
+                text-align: center;
+                /* display: inline-block; */
+                margin-top: 30px;
+                margin-left:375px;
+                float: left;
+            }
+            #header>button:hover{
+                box-shadow: 0,10px,30px,rgb(0,0,0,.4);
+                background-color:#F05A28;
+            }
+            #linkstyle1{
+                background-color: black;
+                float: right;
+                width: 350px;
+                height: auto;
+                margin-left: 20px;
+                margin-top: 40px;
+            }
+            #linkstyle1>a:hover{text-decoration: underline;}
+            .linkstyle2{
+                margin:30px;
+                color:white;
+                text-decoration: none;
+                font-size: 14px;
+            }
+           
+            .fontStyle1{                       
+                margin-left: 43%;
+                font-size: 18px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                color: #aaaaaa;
+            }
+            .fontStyle2{
+                color:white;
+                font-weight: 700;
+                font-size: 66px;
+                letter-spacing: 3px;
+                margin-left: 35%;
+                margin-top: 0;
+            }
+            .fontStyle3{
+                color:#fffff5;
+                font-size: 19px;
+                font-weight: 200;
+                letter-spacing: 1px;
+                margin-top: 30px;
+                margin-left: 18%;
+                margin-right: 18%;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            #Jamie{
+                color:black;
+                background-color: white;
+                width: 75px;
+                height: 40px;
+                line-height: normal;
+                border-radius: 3px;
+                border-width: 2px;
+            }
+            #input{
+                margin-top: 50px;
+                margin-left: 15%;
+                width:850px;
+                height:50px;
+                background-color: black;
+                opacity: 0.7;
+                border-color: black;
+            }
+            .imgstyle{
+                width:420px;
+                height:450px;
+                box-shadow: black;
+            }
+            #bkimg1{
+                background-image: url(imagesFile/bkimage1.jpg);
+                display: block;
+                float: left;
+                
+            }
+            #bkimg2{
+                background-image:url(imagesFile/bkimage2.jpg);
+                display: block;
+                float:left;
+            }
+            #bkimg3{
+                background-image: url(imagesFile/bkimage3.jpg);
+                display: block;
+                float: left;
+            }
+            .fontStyle4{
+                margin-top: 110px;
+                margin-left: 140px;
+                font-size: 13px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                color: #aaaaaa;
+            }
+            .fontStyle5{
+                letter-spacing: 2px;
+                font-size: 30px;
+                font-weight: 500;
+                color: white;
+                margin-left: 100px;
+                margin-right: 50px;
+                margin-top: 20px;
+                text-indent: 1em;
+            }
+            .button2{
+                width:auto;
+                height:45px;
+                background-color:#ec008c;
+                border-radius: 2px;
+                border-style: none;
+                position: relative;
+                color:white;
+                font-weight: 700;
+                font-size: 14;
+                letter-spacing: 2px;
+                line-height: 1.1;
+                text-align: center;
+                /* display: inline-block; */
+               margin-top: 25px;
+               margin-left: 100px;
+               padding-left: 30px;
+               padding-right: 30px;
+            }
+            button:hover{
+                box-shadow: 0,10px,30px,rgb(0,0,0,.4);
+                background-color:#F05A28;
+            }
+            #logo2{
+                float: left;
+                width:180px;
+                height:40px;  
+                margin-top: 20px;
+                margin-left: 30px;
+            }
+            #p{
+                float: left;
+            }
+            .fontStyle6{
+                color: #aaaaaa;
+                font-size: 10px;
+                margin-top: 30px;
+                
+                margin-left: 50px;
+                
+            }
+            #linkstyle3{
+                background-color: black;
+                float: right;
+                width: 350px;
+                height: auto;
+                margin-left: 20px;
+                margin-top: 40px;
+            }
+            #linkstyle3>a:hover{text-decoration: underline;}
+            .linkstyle4{
+                margin:30px;
+                color:white;
+                text-decoration: none;
+                font-size: 14px;
+                margin-bottom: 50px;
+            }
+            #realfooter{
+                position: fixed;
+                bottom: 0px;
+                width: 100%;
+                height: 50px;
+                z-index: 9999;
+                opacity: 0.8;
+                background-color: black;
+            }
+            .fontStyle7{
+                color: #aaaaaa;
+                font-size: 13px;
+                width:700px;
+                float: left;
+            }
+            #cookie{
+                text-decoration: none;
+                color: #aaaaaa;
+            }
+            #cookie:hover{text-decoration: underline;}
+            .disablecookies{
+                float: left;
+                color:#aaaaaa;
+                font-size: 13px;
+                text-decoration: none;
+                margin-left: 100px;
+                margin-top: 10px;
+            }
+            #button3{
+                color: #aaaaaa;
+                font-size: 15px;
+                width: 300px;
+                height: 35px;
+                float: right;
+                margin-right: 20px;
+                background-color: black;
+                border-color: white;
+                border-radius: 3px;
+            }
+            
+
+            
+        </style>
+            
+    </head>
+
+    <body background="imagesFile/image-background.jpg">
+    <!-- <body> -->
+        <div id = "header">
+            <img  id= "logo1" src="imagesFile/js-logo.png" onclick="window.location.href='main.html';">
+            <button id="button1" onclick="window.open('https://www.javascript.com/try')">TRY JAVASCRIPT</button>
+            <div id="linkstyle1">
+            <a class="linkstyle2" href="https://www.javascript.com/learn/strings">Learn</a>
+            <a class="linkstyle2" href="https://www.javascript.com/resources">Resources</a>
+            <a class="linkstyle2" href="https://www.javascript.com/about">About</a>
+            </div>
+        </div>
+        <div class = "bodyer1">
+            <p class="fontStyle1">READY TO TRY</p>
+            <p class="fontStyle2">JavaScript?</p>
+            <p class="fontStyle3"> Begin learning here by typing in your first name surrounded by quotation marks, and ending with a semicolon. For example, you could type the name <span id="Jamie">"Jamie";</span>  and then hit enter.</p>
+            <input type="text" id="input">
+        </div>
+        <div class = "bodyer2">
+            <div id="bkimg1" class="imgstyle">
+                <p class="fontStyle4">INTRODUCTION</p>
+                <p class="fontStyle5">Courses and paths to get you going</p>
+                <button class="button2" onclick="window.open('https://www.pluralsight.com/product/paths')">GET STARTED</button>
+            </div>
+            <div id="bkimg2" class="imgstyle">
+                <p class="fontStyle4">SKILL ASSESSMENT</p>
+                <p class="fontStyle5">Know where your skills stand</p>
+                <button class="button2" onclick="window.open('https://www.pluralsight.com/product/skill-iq')">MEASURE YOUR SKILLS</button>
+            </div>
+            <div id="bkimg3" class="imgstyle">
+                <p class="fontStyle4">INTRODUCTION</p>
+                <p class="fontStyle5">See where Javascript ranks</p>
+                <button class="button2" onclick="window.open('https://www.pluralsight.com/tech-index')">DIVE INTO THE DATA</button>
+            </div>
+        </div>
+        <div class="footer">
+            <img src="imagesFile/js-logo.png" id="logo2" onclick="window.location.href='main.html';">
+            <div id="p">
+                <p class="fontStyle6">© 2016 - 2020 JavaScript.com</p>
+            </div>
+            <div id="linkstyle3">
+                <a class="linkstyle4" href="https://www.javascript.com/learn/strings">Learn</a>
+                <a class="linkstyle4" href="https://www.javascript.com/resources">Resources</a>
+                <a class="linkstyle4" href="https://www.javascript.com/about">About</a>
+            </div>>
+        </div>
+        <div id="realfooter">
+            <div class="fontStyle7">
+                <p>We use cookies to make interactions with our websites and services easy and meaningful. For more information about the cookies we use or to find out how you can disable cookies, <a href="https://www.pluralsight.com/privacy" id="cookie">click here</a></p>
+            </div>
+            <div class="disablecookies">
+                <a href="main.html" id="cookie">Disable cookies</a>
+            </div>
+            <button id="button3" onclick="window.location.href='main.html';">Accept cookies and close this message</button>
+        </div>
+    </body>
+</html>
